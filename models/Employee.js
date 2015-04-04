@@ -13,7 +13,7 @@ var Employee = new Schema({
     email: {type: String, index: {unique: true}},
     phone: String,
     unit: String,
-    max:Number
+    maxbill:Number
 
 });
 

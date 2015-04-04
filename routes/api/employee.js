@@ -19,7 +19,7 @@ function createEmployee(req, res){
                 last_name: input.lname,
                 phone: input.phone,
                 unit: input.unit,
-                max:input.maximum
+                maxbill:input.maximum
                 };
     var emp = new Employee(e_doc);
         emp.email= emp.first_name+"."+emp.last_name+"@ng.is.co.za";

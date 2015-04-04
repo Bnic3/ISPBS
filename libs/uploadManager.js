@@ -10,8 +10,10 @@ var  uploadParams = {
     dest: './uploads',
     rename: function (fieldname, filename) { return "phonebill"; },
     onFileUploadStart: function (file) {console.log(file.originalname + ' is starting ...'); },
-    onFileUploadComplete: function (file) {
+    onFileUploadComplete: function (file,req,res) {
         console.log(file.fieldname + ' uploaded to  ' + file.path);
+        //next();
+       //res.redirect('/xtract');
         xtractor();
         done=true;
     }
