@@ -22,6 +22,11 @@ html, body{
     position: relative;
     width: 100%;
 }
+
+.nav-custom{
+    background-color: #1E242F;
+    height: 65px;
+}
 .landing-nav{
    /* background-color: #1F2129;*/
    /* background-color: #3D71C5*/
@@ -74,4 +79,5 @@ h1, h2, h3, h4, h5 {
 
 .wrapper {
     text-align: center;
+    color: #ffeeff;
 }

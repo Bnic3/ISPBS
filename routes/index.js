@@ -7,6 +7,9 @@ router.get('/', function(req, res) {
   res.render('landing2', { title: 'Express' });
 });
 
+router.get('/loginsuccess', function(req,res){
+    res.render('page/loginsuccess');
+})
 
 
 //login page
@@ -18,8 +21,8 @@ router.get('/account/login',function(req, res){
 
 
 
-router.post('/login',passport.authenticate('local', { successRedirect: '/',
-    failureRedirect: '/error',
+router.post('/login',passport.authenticate('local', { successRedirect: '/loginsuccess',
+    failureRedirect: '/',
     failureFlash: true }));
 
 

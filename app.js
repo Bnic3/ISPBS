@@ -7,6 +7,7 @@ var MongoStore = require("connect-mongo")(session);
 var cookieParser = require('cookie-parser');
 var passport = require("passport");
 var multer = require('multer');
+var flash = require('connect-flash');
 
 var rek = require("rekuire");
 var uploadParams= rek('uploadManager');
@@ -49,6 +50,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //configure multer
 //app.use(multer(uploadParams.parameter));
 
+app.use(flash());
 app.use(session({
     secret: "somelongassname",
     store: sessionStore,
