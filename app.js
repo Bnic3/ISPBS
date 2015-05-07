@@ -21,7 +21,7 @@ var users = require('./routes/users');*/
 var mongoose = require("./libs/database");
 var loader = require("./libs/loader");
 var authentication = require("./libs/authentication");
-//var auth = require("./libs/authentication");
+
 
 //circular reference
 var app = module.exports = express();
@@ -47,7 +47,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 //configure multer
-app.use(multer(uploadParams.parameter));
+//app.use(multer(uploadParams.parameter));
 
 app.use(session({
     secret: "somelongassname",

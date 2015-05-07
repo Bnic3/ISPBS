@@ -1,0 +1,25 @@
+extends ./index
+block content
+    - var page = 'landing'
+    //include ../navbar
+    div(id="landing-main")
+        div(id="logo-wrap")
+        div(id="fullpage")
+            div(id="first-view" class="section")
+                div(class="content-box abs-center")
+                    h1 Get Your Digital Document Signed in Micro-seconds
+                    div(class="btn-control")
+                        a(class="gosyn-btn-r", href= "/account/signup") Sign Up
+                        button(class="gosyn-btn-r" ) Learn More
+            div(id="sencond-view" class="section")
+        script.
+            $(document).ready(function() {
+                $('#fullpage').fullpage({
+                    menu:true,
+                    keyboardScrolling:true,
+                    animateAnchor:true,
+                    sectionSelector:'.section',
+                    slideSelector:'.slide',
+                    verticalCentered:true
+                });
+            });

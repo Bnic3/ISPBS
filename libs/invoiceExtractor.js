@@ -22,6 +22,7 @@ module.exports = function(){
 
     var date = new Date();
     var mi;
+
     var monthIndex = date.getMonth();
     if( monthIndex == 0 ){
         mi = 11
@@ -81,7 +82,8 @@ module.exports = function(){
 
         // get delimiter
         var a = html.indexOf("Direct number")
-        var b = a-7;var delimeter = "."+html.slice(b,a-2);
+        var b = a-7;
+        var delimeter = "."+html.slice(b,a-2);
         $ = cheerio.load(html);
 
         $(delimeter).addClass("ft109").text("x");

@@ -1,8 +1,409 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+
+/*dev*/
+/**{
+  border: 1px solid;
+  padding: 3px;
+}*/
+@import "icomoon.css";
+@import "loader.css";
+
+html, body{
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff !important;
+  white-space: nowrap;
+}
+/*landing*/
+#landing-main{
+  width: 100%;
+  height: 100%;
 }
 
-a {
-  color: #00B7FF;
+div.left-box-wrap{
+  background-color: #2aabd2;
+  width: 50%;
+  height: 100%;
+  position: relative;
+
+}
+
+div.right-box-wrap{
+  background-color: #ffffff;
+  width: 50%;
+  height: 100%;
+  position: relative;
+ /* background-image: url("/assets/media/homepic1.jpg");*/
+}
+
+.abs-center{
+  position: absolute;
+  margin: auto;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+div.left-box-wrap .landing-content{
+  height: 110px;
+  width: 400px;
+}
+div.right-box-wrap .landing-content{
+  width: 400px;
+  height: 500px;
+}
+
+div.left-box-wrap img{
+  opacity: 1;
+}
+
+.form-content h2{
+  font-family: 'Expletus Sans', cursive;
+  text-align: center;
+}
+
+.form-content{
+  width: 400px;
+  height: 500px;
+  background-color: #ffffff;
+}
+
+#login-choice-wrap{
+  font-family: 'Montserrat', sans-serif;
+}
+
+#login-choice-wrap ul{
+  list-style-type: none;
+}
+
+.basic-button{
+  padding: 10px;
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 200px;
+  text-align: center;
+}
+
+#first-view{
+  background-color: #269abc;
+  background-size: cover;
+}
+
+#static-nav{
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.41);
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+#header-container{
+  margin: 0 auto;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+
+
+#header-container #menu{
+  margin: 20px;
+  float:right ;
+}
+
+#header-container #menu a{
+
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #ffffff;
+}
+
+.menu-trigger{
+  font-size: 50px !important;
+  color: #ffffff;
+}
+
+.menu-trigger,
+.menu-trigger:hover,
+.menu-trigger:visited,
+.menu-trigger:active{
+  color:#fff;
+  outline: none;
+}
+
+#menu-wrap{
+  background-color:rgba(0, 0, 0, 0.75);
+  width: 350px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin-right: -350px;
+  transition: margin-right 500ms;
+  z-index: 1000;
+  border: none;
+  padding: 40px;
+  color: #ffffff;
+  font-size: 25px;
+}
+
+#menu-wrap ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#menu-wrap ul li{
+  font-family: "Montserrat";
+  text-align: right;
+}
+
+#menu-wrap:target{
+  display: block;
+  margin-right: 0px;
+}
+
+#menu-wrap:target .menu-trigger{
+  display: none;
+}
+#menu-wrap a{
+  color: #ffffff;
+}
+#menu-wrap a:hover{
+  color: #9d9d9d;
+}
+
+/*Headers*/
+h1, h2, h3, h4, h5{
+  font-family: "Source Sans Pro" !important;
+  font-weight: 200 !important;
+}
+
+/*Content Boxes*/
+
+.btn-control{
+  color: #ffffff;
+  margin: 0 auto;
+  width: 465px;
+  display: block;
+}
+
+.content-box{
+  color: #ffffff;
+  margin: 0 auto;
+  width: 70%;
+  text-align: center;
+}
+
+/*Gosyn Styles*/
+
+.gosyn-btn-r{
+  border: 1px solid #fff;
+  background-color: inherit;
+  font-family: Montserrat;
+  font-weight: bold;
+  padding: 10px;
+  width: 211px;
+  color: #fff;
+  outline: none;
+  border-radius: 20px;
+  transition: color 1000ms;
+  margin: 10px;
+}
+
+.gosyn-btn-r:hover{
+  background-color: #ffffff;
+  color: black;
+}
+
+.gosyn-btn-r:active{
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.gosyn-btn{
+  padding: 10px 20px;;
+  border: 1px solid #d3d3d3;
+  display: inline-block;
+  text-align: center;
+  font-family: Muli;
+  font-size: 15px;
+  background-color: #FFFFFF;
+  color: #000 !important;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+  margin-right: 8px;
+  autofill:none;
+}
+
+.gosyn-btn:hover{
+  background-color: #e6e6e6;
+  text-decoration: none !important;
+}
+.gosyn-btn:active{
+  background-color: #ffffff;
+  text-decoration: none;
+}
+
+#menu a:hover{
+  text-decoration: underline;
+}
+
+
+
+/*Position Adjustments*/
+.btn-control button{
+
+}
+
+
+.full-with-strike{
+  border-top: 1px solid #9d9d9d;
+}
+
+.login-form{
+  width: 570px;
+  height: 200px;
+}
+
+.login-form input[type=text],
+.login-form input[type=password],
+.login-form input[type=email]{
+  width: 100%;
+  padding: 10px;
+  border:1px solid #9d9d9d;
+  background-color: #ffffff;
+}
+
+
+input:-webkit-autofill{
+  background-color: #ffffff;
+}
+
+.login-form form .form-group{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.light-ui{
+  color: #ffffff;
+}
+
+.dark-ui{
+  color: #000000;
+}
+
+.landing-nav{
+  background-color: #1F2129;
+  border-bottom: none !important;
+}
+
+#main-nav{
+  height: 100%;
+  width: 80px;
+  background-color: rgba(81, 104, 118, 1);
+  display: inline-block;
+}
+
+#main-nav ul{
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+#main-nav ul li{
+  padding: 20px;
+  text-align: center;
+}
+
+#main-nav ul li:hover{
+  padding: 20px;
+  text-align: center;
+  background-color: #adadad;
+}
+
+#main-nav ul li a{
+  color: #ffffff;
+  font-size: 38px;
+  text-decoration: none;
+}
+
+#main-nav ul li a:visited,
+#main-nav ul li a:active {
+  text-decoration: none;
+}
+#main-nav ul li a:hover{
+  color: #333333;
+}
+
+
+#top-bar{
+  display: table;
+  background-color: #F5F5F5;
+  width: 100%;
+  padding: 15px;
+}
+
+#top-bar h2{
+  padding: 0px;
+  margin: 0px;
+  float: left;
+}
+
+#dashboard{
+  display: inline-block;
+  width: 96%;
+  height: 100%;
+  vertical-align: top;
+  clear: both;
+  position: relative;
+}
+
+#dashboard-menu div{
+
+}
+
+#dashboard-menu{
+  background-color: #F9F9F9;
+  padding: 15px;
+  text-align: center;
+}
+
+#dashboard-menu a{
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #000;
+}
+
+#right-menu{
+  float: right;
+  clear: right;
+  padding: 5px;
+  display: table-cell;
+}
+
+#right-menu a{
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 19px;
+  color:rgba(81, 104, 118, 1);
+  text-decoration: none;
+}
+
+#right-menu a:hover{
+  color:#000;
+}
+
+.busy-indicator{
+  width: 100px;
+  margin: 0 auto;
+  display: table-cell;
+}
+
+
+#applogo{
+  margin-left: 20px;
 }

@@ -1,0 +1,77 @@
+@import "icomoon.css";
+@import "loader.css";
+
+html, body{
+    height: 100%;
+    width: 100%;
+    /*background-color: #FAFAFA !important;*/
+    white-space: nowrap;
+    background: url('../assets/img/teaser-bg.jpg') no-repeat transparent 50% 55%;
+}
+
+#landing{
+   /* background: url('../assets/img/teaser-bg.jpg') no-repeat transparent 50% 55%;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    padding: 48px 0;
+    color: #fff;
+    margin-top: -1px;
+    position: relative;
+    width: 100%;
+}
+.landing-nav{
+   /* background-color: #1F2129;*/
+   /* background-color: #3D71C5*/
+    background-color: #1E242F;
+    height: 120px;
+    color: #fff;
+    border-bottom: none !important;
+   margin: 0 auto;
+    padding: 30px;
+    border-bottom: 1px solid #eee;
+}
+
+#header-container{
+    margin: 0 auto;
+    padding: 60px;
+    border-bottom: 1px solid #eee;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "Source Sans Pro" !important;
+    font-weight: 200 !important;
+}
+
+.form-login {
+    background-color: #000;
+
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+    border-color:#d2d2d2;
+    border-width: 5px;
+    box-shadow:0 1px 0 #cfcfcf;
+    opacity: 0.4;
+    filter: alpha(opacity=40)
+}
+
+
+/*h4 {
+    border:0 solid #fff;
+    border-bottom-width:1px;
+    padding-bottom:10px;
+    text-align: center;
+}*/
+
+.form-control {
+    border-radius: 10px;
+}
+
+.wrapper {
+    text-align: center;
+}

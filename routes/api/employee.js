@@ -30,10 +30,16 @@ function createEmployee(req, res){
             return res.json(doc);
         });
 
+}
 
 
+function getAllEmployees(req,res){
 
-
+    var Employee = DB.model("Employee");
+    var q = Employee.find({}).exec();
+    q.then(function(results){
+        res.json(results);
+    });
 
 }
 
