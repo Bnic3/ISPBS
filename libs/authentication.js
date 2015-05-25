@@ -28,8 +28,10 @@ module.exports = function (app) {
                 if (!user) {
                     return done(null, false, { message: 'Incorrect username.' });
                 }
+                var validity= user.isValidPassword(password)
                 if (user && user.isValidPassword(password))return done(null,user);
-                if (user && !user.isValidPassword(password))return done(err, false, { message: 'Incorrect password.' });
+                //if (user && !user.isValidPassword(password))return done(err, false, { message: 'Incorrect password.' });
+                return done(err, false, { message: 'Incorrect password.' });
 
 
             });

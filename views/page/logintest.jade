@@ -1,0 +1,21 @@
+- var page = 'login'
+extends ../layout
+block content
+    include ../navbar
+    div(class="login-form abs-center")
+        h3 Sign In
+        p First timer?
+            a Sign Up
+        if message != ""
+            div(class="alert alert-danger") #{message}
+        form(class="form-horizontal" action="/login" method="post")
+            div(class="form-group")
+                div(class="")
+                    input(type="email" name="username" placeholder="Email")
+            div(class="form-group")
+                div(class="")
+                    input(type="password" name="password" placeholder="Password")
+            button(type="Submit" class="gosyn-btn") Sign In
+            button(type="Submit" class="gosyn-btn") Use Google Drive
+
+

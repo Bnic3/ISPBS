@@ -1,0 +1,27 @@
+//Created by john.nana on 5/8/2015.
+extends ../layout
+block content
+    div(id="main-nav")
+        ul
+            li
+                a(href="#" class="icon-home" ui-sref="home")
+            li
+                a(href="#" class="icon-pencil" ui-sref="about")
+            li
+                a(href="#" class="icon-cogs" ui-sref="tell" )
+            li
+                a(href="#" class="icon-archive" ui-sref="tell")
+
+        img(id="footerlogo" alt="Brand" src="./assets/img/islogo.png")
+
+    div(id="dashboard" ng-controller="mainctrl")
+        div(id="top-bar" class="")
+            div(class="col-sm-3")
+                h3(font-color="#000") IS PHONE BILLING SYSTEM
+            div(id="user-controls" class="col-sm-offset-7 col-sm-2")
+                a(href="#" class="icon-user")
+                a(href="#" class="icon-power-off")
+
+        h1 Your are here
+        h2 {{mydata}}
+        div(ui-view)

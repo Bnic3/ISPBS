@@ -22,8 +22,8 @@ UserSchema.methods.setPassword = function(passwordString) {
 };
 UserSchema.methods.isValidPassword = function(passwordString) {
     var w = hash(passwordString, this.salt);
-    return w;
-    //return this.passwdhash === hash(passwordString, this.salt);
+    //return w;
+    return this.passwdhash === hash(passwordString, this.salt);
 };
 
 

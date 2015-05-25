@@ -9,6 +9,87 @@ html, body{
     background: url('../assets/img/teaser-bg.jpg') no-repeat transparent 50% 55%;
 }
 
+#main-nav{
+    height: 100%;
+    width: 80px;
+    background-color: #1E242F;
+    display: inline-block;
+}
+
+
+
+#main-nav ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+#main-nav ul li{
+    padding: 10px;
+    text-align: center;
+}
+
+#main-nav ul li a{
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+/*#main-nav ul li a:visited,*/
+#main-nav ul li a:active {
+    text-decoration: none;
+    color: #656A72;
+}
+#main-nav ul li a:hover{
+    color: #333333;
+}
+#main-nav ul li:hover{
+    padding: 10px;
+    text-align: center;
+    background-color: #adadad;
+}
+
+#top-bar{
+    display: table;
+    background-color: #D8D8D9;
+    font-size: 15px;
+    color: rgba(81, 104, 118, 1);
+    width: 100%;
+
+}
+
+#user-controls{
+    float: right;
+    clear: right;
+    padding: 5px;
+    display: table-cell;
+}
+
+#user-controls a{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 19px;
+    color:rgba(81, 104, 118, 1);
+    text-decoration: none;
+}
+
+#user-controls a:hover{
+    color:#000;
+}
+
+#dashboard{
+    height: 100%;
+    width: 90%;
+    background-color: #F5F5F5;
+
+    display: inline-block;
+    width: 96%;
+    height: 100%;
+    vertical-align: top;
+    clear: both;
+    position: relative;
+
+}
+
 #landing{
    /* background: url('../assets/img/teaser-bg.jpg') no-repeat transparent 50% 55%;*/
     -webkit-background-size: cover;
@@ -80,4 +161,13 @@ h1, h2, h3, h4, h5 {
 .wrapper {
     text-align: center;
     color: #ffeeff;
+}
+
+#footerlogo{
+    position: fixed;
+    left: 2px;
+    width: 75px;
+    bottom: 5px;
+
+
 }

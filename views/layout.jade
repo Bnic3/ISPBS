@@ -1,11 +1,14 @@
 doctype html
-html
+html(ng-app="pbs")
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style2.css')
     link(rel='stylesheet', href='/bower_components/bootstrap/dist/css/bootstrap.css')
     link(rel='stylesheet', href='/bower_components/font-awesome/css/font-awesome.css')
+    link(href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet")
+    link(href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet")
     link(rel='stylesheet', href='/stylesheets/jquery.fullPage.css')
+    link(rel='stylesheet', href='/stylesheets/tablesort.css')
     link(href='http://fonts.googleapis.com/css?family=Questrial|Poiret+One|Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic|Lobster|Montserrat:400,700|Expletus+Sans:400,400italic,500,500italic,600,600italic,700,700italic', rel='stylesheet', type='text/css')
     link(href='http://fonts.googleapis.com/css?family=Muli|Montserrat|Signika|Hammersmith+One' rel='stylesheet', type='text/css')
     link(href='http://www.google.com/fonts#UsePlace:use/Collection:Source+Sans+Pro:200,300,400,200italic,300italic,400italic' rel='stylesheet', type='text/css')
@@ -17,5 +20,8 @@ html
     script(src='bower_components/bootstrap/dist/js/bootstrap.js')
     script(src='/vendor/jquery.fullPage.js')
     script(src='/vendor/jquery.switchstyler.js')
+    script(src= "/javascripts/angular-tablesort.js")
   body
     block content
+  script(src= "/javascripts/pbs.module.js")
+  script(src= "/javascripts/pbsController.js")

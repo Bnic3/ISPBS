@@ -8,14 +8,23 @@ router.get('/', function(req, res) {
 });
 
 router.get('/loginsuccess', function(req,res){
-    res.render('page/loginsuccess');
-})
+
+    console.log(req.user);
+    res.render('page/main');
+});
+
+/*router.get('/partial/:partialname', function(req,res){
+    res.render('partial/partial-'+ req.params.partialname);
+
+});*/
 
 
 //login page
+/*
 router.get('/account/login',function(req, res){
     res.render("pages/login", {page:'login',message:req.flash('error')});
 });
+*/
 
 //Authenticate
 
