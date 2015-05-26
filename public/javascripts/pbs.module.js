@@ -3,8 +3,6 @@
 
     angular
         .module('pbs',['ui.router','tableSort'])
-        .controller("mainctrl", mainCtrl)
-        .controller('homeCtrl',homeCtrl)
         .config(appConfig);
 
     function appConfig ($stateProvider, $urlRouterProvider){
@@ -18,7 +16,7 @@
                 templateUrl: "/partial/partial-tell.html"})
     }
 
-    function mainCtrl($scope){
+   /* function mainCtrl($scope){
          var vm = $scope;
          vm.mydata= "Ogbeni";
     }
@@ -35,7 +33,7 @@
         ];
         vm.noitems = []
 
-    }
+    }*/
 
 
 
