@@ -5,6 +5,7 @@ block content
         ul
             li
                 a(href="#" class="icon-home" ui-sref="home")
+                p Home
             li
                 a(href="#" class="icon-pencil" ui-sref="about")
             li
@@ -14,7 +15,7 @@ block content
 
         img(id="footerlogo" alt="Brand" src="./assets/img/islogo.png")
 
-    div(id="dashboard" ng-controller="homeController as hommy")
+    div(id="dashboard" ng-controller="mainCtrl")
         div(id="top-bar" class="")
             div(class="col-sm-3")
                 h3(font-color="#000") IS PHONE BILLING SYSTEM
@@ -22,6 +23,6 @@ block content
                 a(href="#" class="icon-user")
                 a(href="#" class="icon-power-off")
 
-        h1 Your are here
-        h2 {{hommy.mydata}}
+
+
         div(ui-view)

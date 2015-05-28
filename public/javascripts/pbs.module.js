@@ -1,27 +1,29 @@
-(function () {
-    'use strict';
-
-    angular
-        .module('pbs',['ui.router','tableSort'])
+ angular
+        .module('pbs',['ui.router','smart-table'])
+        .controller("mainCtrl", mainCtrl)
+        .controller("homeCtrl", homeCtrl)
         .config(appConfig);
 
     function appConfig ($stateProvider, $urlRouterProvider){
         $urlRouterProvider.otherwise("/home");
         $stateProvider
-            .state('home',{url: "/partial/home",
-                templateUrl: "/partial/partial-home.html"})
-            .state('about',{url: "/partial/about",
-                templateUrl: "/partial/partial-about.html"})
-            .state('tell',{url: "/partial/tell",
-                templateUrl: "/partial/partial-tell.html"})
+            .state('home',{url: "/home",
+                templateUrl: "/partial/partial-home.html",
+                controller:"homeCtrl" })
+            .state('about',{url: "/about",
+                templateUrl: "/partial/partial-about.html",
+                controller:"aboutController"})
+            .state('tell',{url: "/tell",
+                templateUrl: "/partial/partial-tell.html",
+                controller:"homeCtrl"})
     }
 
-   /* function mainCtrl($scope){
+    function mainCtrl($scope){
          var vm = $scope;
          vm.mydata= "Ogbeni";
     }
 
-    function homeCtrl(){
+    function homeCtrl($scope){
         var vm = $scope;
         vm.items = [
             {Id: "01", Name: "A", Price: "1.00", Quantity: "1"},
@@ -33,9 +35,8 @@
         ];
         vm.noitems = []
 
-    }*/
+    }
 
 
 
 
-})();

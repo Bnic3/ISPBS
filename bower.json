@@ -24,6 +24,8 @@
     "angular-ui-router": "~0.2.14",
     "bootstrap": "~3.3.4",
     "font-awsome": "~4.3.0",
-    "lodash": "~3.8.0"
+    "lodash": "~3.8.0",
+    "angu-fixed-header-table": "~1.2.0",
+    "angular-smart-table": "~2.0.3"
   }
 }

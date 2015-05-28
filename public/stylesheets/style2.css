@@ -9,11 +9,20 @@ html, body{
     background: url('../assets/img/teaser-bg.jpg') no-repeat transparent 50% 55%;
 }
 
+#tell-div{
+    height: 600px;
+}
+
+.page{
+    padding: 20px;
+}
+
 #main-nav{
     height: 100%;
     width: 80px;
     background-color: #1E242F;
     display: inline-block;
+    padding-top: 20px;
 }
 
 
@@ -22,6 +31,7 @@ html, body{
     padding: 0px;
     margin: 0px;
     list-style: none;
+    color: #fff;
 }
 #main-nav ul li{
     padding: 10px;
@@ -32,6 +42,15 @@ html, body{
     color: #fff;
     font-size: 30px;
     text-decoration: none;
+
+    display: block;
+  /*  color: #f1f1f2;*/
+    /*text-align: center;
+    padding-top: 42px;
+    padding-bottom: 10px;*/
+    background-size: 24px;
+    opacity: 0.9;
+
 }
 
 /*#main-nav ul li a:visited,*/
@@ -168,6 +187,9 @@ h1, h2, h3, h4, h5 {
     left: 2px;
     width: 75px;
     bottom: 5px;
+}
 
+.scrollable{
+    overflow-y: scroll;
 
 }
