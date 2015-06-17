@@ -106,6 +106,7 @@ html, body{
     vertical-align: top;
     clear: both;
     position: relative;
+    padding-right: 50px;
 
 }
 
@@ -190,6 +191,12 @@ h1, h2, h3, h4, h5 {
 }
 
 .scrollable{
-    overflow-y: scroll;
+    width: auto;
+    height: 370px;
+    overflow-x: scroll;
+
+}
+.adduserform{
+    bottom: 30px;
 
 }

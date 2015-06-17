@@ -1,7 +1,29 @@
 <div class="page panel-body">
-<h3>Phone Bill Account Overview For {{month}}</h3>
+    <h3>Phone Bill Account Overview For {{month}}</h3>
+
+    <table st-table="displayed" class="table table-striped">
+        <thead>
+        <tr>
+            <th st-ratio="20" st-sort="firstName">first name</th>
+            <th st-ratio="20" st-sort="lastName">last name</th>
+            <th st-ratio="10" st-sort="age">Extension No</th>
+            <th st-ratio="30" st-sort="email">Unit</th>
+            <th st-ratio="20" st-sort="balance">limit</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="row in model.employees">
+            <td st-ratio="20">{{row.first_name}}</td>
+            <td st-ratio="20">{{row.last_name | uppercase}}</td>
+            <td st-ratio="10">{{row.phone}}</td>
+            <td st-ratio="30">{{row.unit}}</td>
+            <td st-ratio="20">{{row.maxbill | currency}}</td>
+        </tr>
+
+        </tbody>
 
 
+    </table>
     <br />
 
 
